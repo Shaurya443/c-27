@@ -24,7 +24,6 @@ function setup() {
 	bob3 = new bob(400,575,40)
 	bob4 = new bob(440,575,40)
 	bob5 = new bob(480,575,40)
-	
 	rope1=new rope(bob1.body,roofObject.body,-80, 0)
 	rope2=new rope(bob2.body,roofObject.body,-40, 0)
 	rope3=new rope(bob3.body,roofObject.body,-0,0)
@@ -56,16 +55,19 @@ function draw() {
  
 
 }
-
-
 function keyPressed(){
 
 	if(keyCode === UP_ARROW){
-
-		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:50,y:45})
-		
+			Matter.Body.applyForce(bob1.body,bob1.body.position,{x:50,y:45})
 	}
 }
+
+
+
+
+
+
+
 
 
 
